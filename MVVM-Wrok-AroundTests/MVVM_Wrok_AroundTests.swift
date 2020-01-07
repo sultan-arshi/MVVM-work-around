@@ -15,7 +15,7 @@ class MVVM_Wrok_AroundTests: BaseTest {
         super.setUp()
     }
 
-    func testForCompleted() {
+    func testForCompletedTodo() {
         XCTAssertNotEqual(self.todoViewModal.todoCellViewModal.count, 0)
         if let completedTodo = self.todoViewModal.todoCellViewModal.first(where: { $0.isCompleted }) {
             XCTAssertEqual(completedTodo.accessryType, .detailDisclosureButton)

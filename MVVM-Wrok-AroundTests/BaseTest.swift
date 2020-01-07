@@ -30,6 +30,7 @@ class BaseTest: XCTestCase {
     
 }
 
+// MARK: - TodoDelegate
 extension BaseTest: TodoDelegate {
     
     func didReceive(data: Any?, error: Error?) {

@@ -15,4 +15,8 @@ I used [This sample data](https://github.com/user/repo/blob/branch/other_file.md
 * Swift Generics
 
 
+###  Tests ###
+Two tests for dynamic todo list added as sample  
+* testForCompletedTodo()
+* testForInCompletedTodo()
 
