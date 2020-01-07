@@ -9,26 +9,30 @@
 import XCTest
 @testable import MVVM_Wrok_Around
 
-class MVVM_Wrok_AroundTests: XCTestCase {
+class MVVM_Wrok_AroundTests: BaseTest {
 
     override func setUp() {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        super.setUp()
     }
 
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+    func testForCompleted() {
+        XCTAssertNotEqual(self.todoViewModal.todoCellViewModal.count, 0)
+        if let completedTodo = self.todoViewModal.todoCellViewModal.first(where: { $0.isCompleted }) {
+            XCTAssertEqual(completedTodo.accessryType, .detailDisclosureButton)
+            XCTAssertNotNil(completedTodo.id)
+            XCTAssertNotNil(completedTodo.title)
+            XCTAssertNotNil(completedTodo.userId)
+        }
+        
     }
-
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
+    
+    func testForInCompletedTodo() {
+        XCTAssertNotEqual(self.todoViewModal.todoCellViewModal.count, 0)
+        if let inCompletedTodo = self.todoViewModal.todoCellViewModal.first(where: { !$0.isCompleted }) {
+            XCTAssertEqual(inCompletedTodo.accessryType, .none)
+            XCTAssertNotNil(inCompletedTodo.id)
+            XCTAssertNotNil(inCompletedTodo.title)
+            XCTAssertNotNil(inCompletedTodo.userId)
         }
     }
-
 }

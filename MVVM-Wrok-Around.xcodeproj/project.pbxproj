@@ -8,12 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		7F20B24E23C3299F004A2F55 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F20B24D23C3299F004A2F55 /* AppDelegate.swift */; };
-		7F20B25023C3299F004A2F55 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F20B24F23C3299F004A2F55 /* ViewController.swift */; };
+		7F20B25023C3299F004A2F55 /* TodoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F20B24F23C3299F004A2F55 /* TodoViewController.swift */; };
 		7F20B25323C3299F004A2F55 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F20B25123C3299F004A2F55 /* Main.storyboard */; };
 		7F20B25523C329A0004A2F55 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F20B25423C329A0004A2F55 /* Assets.xcassets */; };
 		7F20B25823C329A0004A2F55 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F20B25623C329A0004A2F55 /* LaunchScreen.storyboard */; };
 		7F20B26323C329A0004A2F55 /* MVVM_Wrok_AroundTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F20B26223C329A0004A2F55 /* MVVM_Wrok_AroundTests.swift */; };
 		7F20B26E23C329A0004A2F55 /* MVVM_Wrok_AroundUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F20B26D23C329A0004A2F55 /* MVVM_Wrok_AroundUITests.swift */; };
+		7F20B27D23C32A04004A2F55 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F20B27C23C32A04004A2F55 /* UIColor+Extensions.swift */; };
+		7F20B28D23C3459F004A2F55 /* Services.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F20B28C23C3459F004A2F55 /* Services.swift */; };
+		7F20B28F23C345C7004A2F55 /* TodoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F20B28E23C345C7004A2F55 /* TodoManager.swift */; };
+		7F20B29623C35381004A2F55 /* Todo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F20B29523C35381004A2F55 /* Todo.swift */; };
+		7F20B29D23C35B5B004A2F55 /* TodoViewModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F20B29C23C35B5B004A2F55 /* TodoViewModal.swift */; };
+		7F20B29F23C36B9C004A2F55 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F20B29E23C36B9C004A2F55 /* BaseViewController.swift */; };
+		7F20B2A123C36DC5004A2F55 /* TodoCellViewModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F20B2A023C36DC5004A2F55 /* TodoCellViewModal.swift */; };
+		7F20B2A323C37563004A2F55 /* CustomNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F20B2A223C37563004A2F55 /* CustomNavigationController.swift */; };
+		7F20B2A623C377A8004A2F55 /* Storyboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F20B2A523C377A8004A2F55 /* Storyboarded.swift */; };
+		7F45722923C3CC9B0019851F /* BaseTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F45722723C3CA510019851F /* BaseTest.swift */; };
+		7F45722D23C450390019851F /* Readme.md in Resources */ = {isa = PBXBuildFile; fileRef = 7F45722C23C450390019851F /* Readme.md */; };
+		7FB92DFE23C3AFAA00F845D9 /* TodoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB92DFD23C3AFAA00F845D9 /* TodoTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +48,7 @@
 /* Begin PBXFileReference section */
 		7F20B24A23C3299F004A2F55 /* MVVM-Wrok-Around.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MVVM-Wrok-Around.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F20B24D23C3299F004A2F55 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7F20B24F23C3299F004A2F55 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7F20B24F23C3299F004A2F55 /* TodoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoViewController.swift; sourceTree = "<group>"; };
 		7F20B25223C3299F004A2F55 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7F20B25423C329A0004A2F55 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7F20B25723C329A0004A2F55 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +59,18 @@
 		7F20B26923C329A0004A2F55 /* MVVM-Wrok-AroundUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MVVM-Wrok-AroundUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F20B26D23C329A0004A2F55 /* MVVM_Wrok_AroundUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVM_Wrok_AroundUITests.swift; sourceTree = "<group>"; };
 		7F20B26F23C329A0004A2F55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7F20B27C23C32A04004A2F55 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
+		7F20B28C23C3459F004A2F55 /* Services.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services.swift; sourceTree = "<group>"; };
+		7F20B28E23C345C7004A2F55 /* TodoManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoManager.swift; sourceTree = "<group>"; };
+		7F20B29523C35381004A2F55 /* Todo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Todo.swift; sourceTree = "<group>"; };
+		7F20B29C23C35B5B004A2F55 /* TodoViewModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoViewModal.swift; sourceTree = "<group>"; };
+		7F20B29E23C36B9C004A2F55 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		7F20B2A023C36DC5004A2F55 /* TodoCellViewModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoCellViewModal.swift; sourceTree = "<group>"; };
+		7F20B2A223C37563004A2F55 /* CustomNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationController.swift; sourceTree = "<group>"; };
+		7F20B2A523C377A8004A2F55 /* Storyboarded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboarded.swift; sourceTree = "<group>"; };
+		7F45722723C3CA510019851F /* BaseTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTest.swift; sourceTree = "<group>"; };
+		7F45722C23C450390019851F /* Readme.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Readme.md; sourceTree = "<group>"; };
+		7FB92DFD23C3AFAA00F845D9 /* TodoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +101,7 @@
 		7F20B24123C3299F004A2F55 = {
 			isa = PBXGroup;
 			children = (
+				7F45722C23C450390019851F /* Readme.md */,
 				7F20B24C23C3299F004A2F55 /* MVVM-Wrok-Around */,
 				7F20B26123C329A0004A2F55 /* MVVM-Wrok-AroundTests */,
 				7F20B26C23C329A0004A2F55 /* MVVM-Wrok-AroundUITests */,
@@ -97,8 +122,12 @@
 		7F20B24C23C3299F004A2F55 /* MVVM-Wrok-Around */ = {
 			isa = PBXGroup;
 			children = (
+				7F20B2A423C3776D004A2F55 /* BaseSetup */,
+				7F20B29723C35B11004A2F55 /* Todo */,
+				7F20B29423C35363004A2F55 /* Modals */,
+				7F20B28B23C34491004A2F55 /* Services */,
+				7F20B27B23C329BB004A2F55 /* Helper */,
 				7F20B24D23C3299F004A2F55 /* AppDelegate.swift */,
-				7F20B24F23C3299F004A2F55 /* ViewController.swift */,
 				7F20B25123C3299F004A2F55 /* Main.storyboard */,
 				7F20B25423C329A0004A2F55 /* Assets.xcassets */,
 				7F20B25623C329A0004A2F55 /* LaunchScreen.storyboard */,
@@ -110,6 +139,7 @@
 		7F20B26123C329A0004A2F55 /* MVVM-Wrok-AroundTests */ = {
 			isa = PBXGroup;
 			children = (
+				7F45722723C3CA510019851F /* BaseTest.swift */,
 				7F20B26223C329A0004A2F55 /* MVVM_Wrok_AroundTests.swift */,
 				7F20B26423C329A0004A2F55 /* Info.plist */,
 			);
@@ -123,6 +153,76 @@
 				7F20B26F23C329A0004A2F55 /* Info.plist */,
 			);
 			path = "MVVM-Wrok-AroundUITests";
+			sourceTree = "<group>";
+		};
+		7F20B27B23C329BB004A2F55 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				7F20B27C23C32A04004A2F55 /* UIColor+Extensions.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		7F20B28B23C34491004A2F55 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				7F20B28C23C3459F004A2F55 /* Services.swift */,
+				7F20B28E23C345C7004A2F55 /* TodoManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		7F20B29423C35363004A2F55 /* Modals */ = {
+			isa = PBXGroup;
+			children = (
+				7F20B29523C35381004A2F55 /* Todo.swift */,
+			);
+			path = Modals;
+			sourceTree = "<group>";
+		};
+		7F20B29723C35B11004A2F55 /* Todo */ = {
+			isa = PBXGroup;
+			children = (
+				7F20B29A23C35B34004A2F55 /* Controllers */,
+				7F20B29923C35B2B004A2F55 /* Views */,
+				7F20B29823C35B1E004A2F55 /* ViewModal */,
+			);
+			path = Todo;
+			sourceTree = "<group>";
+		};
+		7F20B29823C35B1E004A2F55 /* ViewModal */ = {
+			isa = PBXGroup;
+			children = (
+				7F20B29C23C35B5B004A2F55 /* TodoViewModal.swift */,
+				7F20B2A023C36DC5004A2F55 /* TodoCellViewModal.swift */,
+			);
+			path = ViewModal;
+			sourceTree = "<group>";
+		};
+		7F20B29923C35B2B004A2F55 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7FB92DFD23C3AFAA00F845D9 /* TodoTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		7F20B29A23C35B34004A2F55 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7F20B24F23C3299F004A2F55 /* TodoViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		7F20B2A423C3776D004A2F55 /* BaseSetup */ = {
+			isa = PBXGroup;
+			children = (
+				7F20B29E23C36B9C004A2F55 /* BaseViewController.swift */,
+				7F20B2A223C37563004A2F55 /* CustomNavigationController.swift */,
+				7F20B2A523C377A8004A2F55 /* Storyboarded.swift */,
+			);
+			path = BaseSetup;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,6 +331,7 @@
 			files = (
 				7F20B25823C329A0004A2F55 /* LaunchScreen.storyboard in Resources */,
 				7F20B25523C329A0004A2F55 /* Assets.xcassets in Resources */,
+				7F45722D23C450390019851F /* Readme.md in Resources */,
 				7F20B25323C3299F004A2F55 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -256,7 +357,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7F20B25023C3299F004A2F55 /* ViewController.swift in Sources */,
+				7F20B28F23C345C7004A2F55 /* TodoManager.swift in Sources */,
+				7F20B25023C3299F004A2F55 /* TodoViewController.swift in Sources */,
+				7F20B29623C35381004A2F55 /* Todo.swift in Sources */,
+				7F20B28D23C3459F004A2F55 /* Services.swift in Sources */,
+				7F20B27D23C32A04004A2F55 /* UIColor+Extensions.swift in Sources */,
+				7F20B29F23C36B9C004A2F55 /* BaseViewController.swift in Sources */,
+				7F20B2A323C37563004A2F55 /* CustomNavigationController.swift in Sources */,
+				7F20B2A623C377A8004A2F55 /* Storyboarded.swift in Sources */,
+				7F20B2A123C36DC5004A2F55 /* TodoCellViewModal.swift in Sources */,
+				7FB92DFE23C3AFAA00F845D9 /* TodoTableViewCell.swift in Sources */,
+				7F20B29D23C35B5B004A2F55 /* TodoViewModal.swift in Sources */,
 				7F20B24E23C3299F004A2F55 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -265,6 +376,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F45722923C3CC9B0019851F /* BaseTest.swift in Sources */,
 				7F20B26323C329A0004A2F55 /* MVVM_Wrok_AroundTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
