@@ -2,14 +2,14 @@
 
 # MVVM-work-Arround
 
-A sample project to show the implementation of the MVVM
+A sample project to show the implementation of the MVVM using delegate design patren
 
 ## Json Data
 
-I used [This sample data](https://github.com/user/repo/blob/branch/other_file.md) for fetching json data 
+I used [This sample data](https://jsonplaceholder.typicode.com/todos) for fetching json to make things dynamic 
 
 ### Technologies ###
-* Xcode 10.2.1
+* Xcode 11.2.1
 * Swift( 5 )
 * Storyboard
 * Swift Generics
