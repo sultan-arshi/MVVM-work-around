@@ -25,6 +25,8 @@
 		7F20B2A623C377A8004A2F55 /* Storyboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F20B2A523C377A8004A2F55 /* Storyboarded.swift */; };
 		7F45722923C3CC9B0019851F /* BaseTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F45722723C3CA510019851F /* BaseTest.swift */; };
 		7F45722D23C450390019851F /* Readme.md in Resources */ = {isa = PBXBuildFile; fileRef = 7F45722C23C450390019851F /* Readme.md */; };
+		7FB0AD3523CF400600792D03 /* Sample_json.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 7FB0AD3423CF400600792D03 /* Sample_json.rtf */; };
+		7FB0AD3823CF42DC00792D03 /* TodoData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7FB0AD3623CF42DC00792D03 /* TodoData.xcdatamodeld */; };
 		7FB92DFE23C3AFAA00F845D9 /* TodoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB92DFD23C3AFAA00F845D9 /* TodoTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -70,6 +72,8 @@
 		7F20B2A523C377A8004A2F55 /* Storyboarded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboarded.swift; sourceTree = "<group>"; };
 		7F45722723C3CA510019851F /* BaseTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTest.swift; sourceTree = "<group>"; };
 		7F45722C23C450390019851F /* Readme.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Readme.md; sourceTree = "<group>"; };
+		7FB0AD3423CF400600792D03 /* Sample_json.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = Sample_json.rtf; sourceTree = "<group>"; };
+		7FB0AD3723CF42DC00792D03 /* TodoData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TodoData.xcdatamodel; sourceTree = "<group>"; };
 		7FB92DFD23C3AFAA00F845D9 /* TodoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -122,16 +126,12 @@
 		7F20B24C23C3299F004A2F55 /* MVVM-Wrok-Around */ = {
 			isa = PBXGroup;
 			children = (
+				7FB0AD3323CF3D7A00792D03 /* Resources */,
 				7F20B2A423C3776D004A2F55 /* BaseSetup */,
 				7F20B29723C35B11004A2F55 /* Todo */,
 				7F20B29423C35363004A2F55 /* Modals */,
 				7F20B28B23C34491004A2F55 /* Services */,
 				7F20B27B23C329BB004A2F55 /* Helper */,
-				7F20B24D23C3299F004A2F55 /* AppDelegate.swift */,
-				7F20B25123C3299F004A2F55 /* Main.storyboard */,
-				7F20B25423C329A0004A2F55 /* Assets.xcassets */,
-				7F20B25623C329A0004A2F55 /* LaunchScreen.storyboard */,
-				7F20B25923C329A0004A2F55 /* Info.plist */,
 			);
 			path = "MVVM-Wrok-Around";
 			sourceTree = "<group>";
@@ -223,6 +223,20 @@
 				7F20B2A523C377A8004A2F55 /* Storyboarded.swift */,
 			);
 			path = BaseSetup;
+			sourceTree = "<group>";
+		};
+		7FB0AD3323CF3D7A00792D03 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7F20B25923C329A0004A2F55 /* Info.plist */,
+				7F20B25423C329A0004A2F55 /* Assets.xcassets */,
+				7F20B25623C329A0004A2F55 /* LaunchScreen.storyboard */,
+				7F20B24D23C3299F004A2F55 /* AppDelegate.swift */,
+				7F20B25123C3299F004A2F55 /* Main.storyboard */,
+				7FB0AD3423CF400600792D03 /* Sample_json.rtf */,
+				7FB0AD3623CF42DC00792D03 /* TodoData.xcdatamodeld */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -332,6 +346,7 @@
 				7F20B25823C329A0004A2F55 /* LaunchScreen.storyboard in Resources */,
 				7F20B25523C329A0004A2F55 /* Assets.xcassets in Resources */,
 				7F45722D23C450390019851F /* Readme.md in Resources */,
+				7FB0AD3523CF400600792D03 /* Sample_json.rtf in Resources */,
 				7F20B25323C3299F004A2F55 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -368,6 +383,7 @@
 				7F20B2A123C36DC5004A2F55 /* TodoCellViewModal.swift in Sources */,
 				7FB92DFE23C3AFAA00F845D9 /* TodoTableViewCell.swift in Sources */,
 				7F20B29D23C35B5B004A2F55 /* TodoViewModal.swift in Sources */,
+				7FB0AD3823CF42DC00792D03 /* TodoData.xcdatamodeld in Sources */,
 				7F20B24E23C3299F004A2F55 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -545,7 +561,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "MVVM-Wrok-Around/Info.plist";
+				INFOPLIST_FILE = "MVVM-Wrok-Around/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -562,7 +578,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "MVVM-Wrok-Around/Info.plist";
+				INFOPLIST_FILE = "MVVM-Wrok-Around/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -692,6 +708,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		7FB0AD3623CF42DC00792D03 /* TodoData.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				7FB0AD3723CF42DC00792D03 /* TodoData.xcdatamodel */,
+			);
+			currentVersion = 7FB0AD3723CF42DC00792D03 /* TodoData.xcdatamodel */;
+			path = TodoData.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 7F20B24223C3299F004A2F55 /* Project object */;
 }

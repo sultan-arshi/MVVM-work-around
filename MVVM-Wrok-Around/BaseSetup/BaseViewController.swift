@@ -24,7 +24,7 @@ class BaseViewController: UIViewController {
     fileprivate func setupNavBar() {
         navigationItem.title = "Courses"
         navigationController?.navigationBar.prefersLargeTitles = true
-        navigationController?.navigationBar.backgroundColor = .yellow
+        navigationController?.navigationBar.backgroundColor = UIColor(r: 50, g: 199, b: 242)
         navigationController?.navigationBar.isTranslucent = false
         navigationController?.navigationBar.barTintColor = UIColor(r: 50, g: 199, b: 242)
         navigationController?.navigationBar.largeTitleTextAttributes = [.foregroundColor: UIColor.white]
