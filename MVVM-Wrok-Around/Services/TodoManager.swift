@@ -68,7 +68,7 @@ fileprivate class Call {
             } catch let jsonErr {
                 callBack(nil, jsonErr)
             }
-            }.resume()
+        }.resume()
     }
 }
 

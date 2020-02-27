@@ -19,8 +19,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         window = UIWindow()
         window?.makeKeyAndVisible()
-        
-        window?.rootViewController = CustomNavigationController(rootViewController: TodoViewController.instantiate())
+        let todoViewController = TodoViewController.instantiate()
+        todoViewController.viewModel = TodoViewModelImp(delegate: todoViewController)
+        window?.rootViewController = CustomNavigationController(rootViewController: todoViewController)
         
         return true
     }

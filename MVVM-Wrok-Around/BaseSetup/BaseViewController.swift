@@ -39,7 +39,7 @@ class BaseViewController: UIViewController {
     }
     
     func showHUD() {
-        container = UIView(frame: CGRect(x: view.frame.midX - 90, y: view.frame.midY - 25, width: 180, height: 50))
+        container = UIView(frame: CGRect(x: UIScreen.main.bounds.width/2 - 90, y: UIScreen.main.bounds.height/2 - 25, width: 180, height: 50))
         container.backgroundColor = .white
         container.alpha = 0.8
         container.layer.cornerRadius = 10
@@ -51,7 +51,7 @@ class BaseViewController: UIViewController {
         
         let textLabel = UILabel(frame: CGRect(x: 60, y: 0, width: 200, height: 50))
         textLabel.textColor = .gray
-        textLabel.text = "Saving Photo"
+        textLabel.text = "Please wait"
         
         container.addSubview(activityView)
         container.addSubview(textLabel)

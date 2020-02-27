@@ -21,7 +21,6 @@ class TodoViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.showHUD()
-        self.viewModel = TodoViewModelImp(delegate: self)
         self.tableViewSetup()
     }
     
